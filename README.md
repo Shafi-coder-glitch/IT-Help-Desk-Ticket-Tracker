@@ -28,19 +28,23 @@ The application uses SQLite and Entity Framework Core to store and manage ticket
 
 ## Setup Instructions
 
-1. Install the .NET 10 SDK.
+1. Install the .NET 10 SDK and Entity Framework Core CLI tools.
 2. Download or clone this GitHub repository.
 3. Open the HelpDeskWebNew project folder.
 4. Open a terminal in the project folder.
-5. Run the following command:
+5. Restore dependencies:
 
-   dotnet restore
+   `dotnet restore`
 
-6. Start the application:
+6. Create the database:
 
-   dotnet run
+   `dotnet ef database update`
 
-7. Open the localhost URL displayed in the terminal.
+7. Start the application:
+
+   `dotnet run`
+
+8. Open the localhost URL displayed in the terminal.
 
 ## Database
 
